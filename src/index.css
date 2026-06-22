@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --spotifyGreen: #1cd961;
+  --spotifyGreenHover: #1ae35f;
+  --spotifyGreenActive: #31dc6b;
+  --spotifyBlack: #1c1514;
+  --spotifyGray: #a8a8a8;
+  --spotifyBlackHover: #150f0f;
+  --spotifyBlackActive: #120d0d;
+  --spotifyWhite: #cccccc;
+}
+
+#root {
+  height: 100vh;
+  background-color: var(--spotifyBlack);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--spotifyBlack);
+  height: 100%;
+  color: var(--spotifyWhite);
+}
+
+.spotifyGreen {
+  color: var(--spotifyGreen);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--spotifyGreen);
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: var(--spotifyGreenHover);
+}
+
+#mainDiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotifyLogo {
+  width: 60px;
+}
+
+.loggedInOrNot {
+  background-color: var(--spotifyGreen);
+  border: 1px solid var(--spotifyBlack);
+}
+
+.loggedInOrNot:hover {
+  background-color: var(--spotifyGreenHover);
+}
+
+.loggedInOrNot:active {
+  background-color: var(--spotifyGreenActive);
+}
+
+.song:hover {
+  background-color: var(--spotifyBlackHover);
+}
+
+.song:active {
+  background-color: var(--spotifyBlackActive);
+}
+
+.albumCover {
+  width: 80px;
+  height: 80px;
+}
+
+.songTitle {
+  color: white;
+}
+
+.songTitle:hover {
+  color: var(--spotifyGreen);
+}
+
+.songArtist {
+  color: var(--spotifyGreen);
+}
+
+.songYear {
+  color: var(--spotifyGray);
+}
+
+button {
+  color: var(--spotifyBlack);
+}
+
+a {
+  color: var(--spotifyWhite);
+}
+
+a:hover {
+  color: var(--spotifyGreen);
+}
+
+a:active {
+  color: var(--spotifyGreen);
+}
+
+input:active, input:focus, input:hover {
+  background-color: var(--spotifyBlackHover);
+}
+
+button {
+  color: var(--spotifyBlack);
+  background-color: var(--spotifyGreen);
+}
+
+button:hover {
+  background-color: var(--spotifyGreenHover);
+}
+
+button:active {
+  background-color: var(--spotifyGreenActive);
+}
+
+footer {
+  background-color: var(--spotifyBlackActive);
+}
+
+footer p:hover {
+  color: var(--spotifyGreen);
+}
